@@ -24,7 +24,7 @@ public class CollectController {
     @Autowired
     private KafkaTemplate kafkaTemplate;
 
-    @RequestMapping(value = "/send", method = RequestMethod.GET)
+    @RequestMapping(value = "/send", method = {RequestMethod.GET, RequestMethod.POST})
     @ApiOperation(value = "kafka", notes = "kafka")
     public String sendKafka(@ApiParam(value = "message", name = "message", required = true) @RequestParam String message) {
         try {
