@@ -29,7 +29,7 @@ public class CollectController {
     public String sendKafka(@ApiParam(value = "message", name = "message", required = true) @RequestParam String message) {
         try {
             logger.info("kafka的消息={}", message);
-            kafkaTemplate.send("test", "key", message);
+            kafkaTemplate.send("MANAGERTOPIC", "key", message);
             logger.info("发送kafka成功.");
             return "发送kafka成功";
         } catch (Exception e) {

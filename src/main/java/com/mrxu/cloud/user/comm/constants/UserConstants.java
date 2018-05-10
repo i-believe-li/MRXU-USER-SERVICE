@@ -5,5 +5,5 @@ package com.mrxu.cloud.user.comm.constants;
  * @since 2018/5/8
  */
 public class UserConstants {
-    public static final String MANAGER_TOPIC = "MANAGER_TOPIC";
+    public static final String MANAGER_TOPIC = "MANAGERTOPIC";
 }

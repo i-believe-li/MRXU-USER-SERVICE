@@ -47,7 +47,7 @@ public class KafkaConsumerConfig {
         return new DefaultKafkaConsumerFactory<>(consumerConfigs());
     }
 
-
+    @Bean
     public Map<String, Object> consumerConfigs() {
         Map<String, Object> propsMap = new HashMap<>();
         propsMap.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, servers);
